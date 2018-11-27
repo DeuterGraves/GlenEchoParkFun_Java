@@ -1,4 +1,4 @@
-package Attractions;
+package ThemePark;
 
 public interface IReviewed {
 

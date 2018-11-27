@@ -1,4 +1,6 @@
-package Attractions;
+package ThemePark;
+
+import ThemePark.Visitor;
 
 public interface ISecurity {
 

@@ -1,5 +1,7 @@
 package Attractions;
 
+import ThemePark.ISecurity;
+
 public class Playground extends Attraction implements ISecurity {
 
     private int maxAge;
