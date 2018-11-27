@@ -23,7 +23,7 @@ public class CandyFlossStallTest {
     public void candyFlossStallHasOwner(){
         assertEquals("Lætitia Sugarinham", candyFlossStall.getOwnerName());
     }
-    
+
     @Test
     public void candyFlossStallHasParkingSpot(){
         assertEquals("A1", candyFlossStall.getParkingSpot());
