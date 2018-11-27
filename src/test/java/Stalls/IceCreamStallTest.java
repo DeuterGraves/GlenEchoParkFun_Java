@@ -11,7 +11,7 @@ public class IceCreamStallTest {
 
     @Before
     public void before(){
-        iceCreamStall = new IceCreamStall("Brain Freezer!", "Latrice Letchington", "1A");
+        iceCreamStall = new IceCreamStall("Brain Freezer!", "Patrice Letchington", "1A");
     }
 
     @Test
@@ -21,7 +21,7 @@ public class IceCreamStallTest {
 
     @Test
     public void iceCreamStallHasOwner(){
-        assertEquals("Latrice Letchington", iceCreamStall.getOwnerName());
+        assertEquals("Patrice Letchington", iceCreamStall.getOwnerName());
     }
 
     @Test
