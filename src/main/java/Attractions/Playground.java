@@ -1,6 +1,6 @@
 package Attractions;
 
-public class Playground extends Attraction {
+public class Playground extends Attraction implements ISecurity {
 
     private int maxAge;
 

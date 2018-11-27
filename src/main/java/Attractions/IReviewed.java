@@ -1,3 +1,5 @@
+package Attractions;
+
 public interface IReviewed {
 
     public int getRating();

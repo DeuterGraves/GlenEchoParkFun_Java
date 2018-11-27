@@ -1,3 +1,5 @@
+package Attractions;
+
 public interface ITicketed {
 
     public double defaultPrice();
