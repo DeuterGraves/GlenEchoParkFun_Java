@@ -1,6 +1,8 @@
 package Attractions;
 
-public abstract class Attraction {
+import ThemePark.IReviewed;
+
+public abstract class Attraction implements IReviewed {
     protected String name;
     protected int rating;
 
