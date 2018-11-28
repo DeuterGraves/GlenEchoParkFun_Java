@@ -1,6 +1,6 @@
 package Attractions;
 
-import ThemePark.ISecurity;
+import Interfaces.ISecurity;
 import ThemePark.Visitor;
 
 public class RollerCoaster extends Attraction implements ISecurity {

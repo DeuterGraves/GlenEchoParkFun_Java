@@ -1,4 +1,4 @@
-package ThemePark;
+package Interfaces;
 
 import ThemePark.Visitor;
 

@@ -1,6 +1,6 @@
 package Stalls;
 
-import ThemePark.ISecurity;
+import Interfaces.ISecurity;
 import ThemePark.Visitor;
 
 public class TabaccoStall extends Stall implements ISecurity {
