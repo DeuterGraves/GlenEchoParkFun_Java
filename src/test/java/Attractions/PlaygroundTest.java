@@ -14,7 +14,7 @@ public class PlaygroundTest {
 
     @Before
     public void before(){
-        playground = new Playground("Spanish Ballroom Playground");
+        playground = new Playground("Spanish Ballroom Playground", 4);
         visitor1 = new Visitor("Della Pandalan", 10, 120, 15);
         visitor2 = new Visitor("Robert Bingston", 16, 167, 25);
     }
@@ -39,4 +39,8 @@ public class PlaygroundTest {
         assertEquals(false, playground.isAllowedTo(visitor2));
     }
 
+    @Test
+    public void playgroundHasRating(){
+        assertEquals(4, playground.getRating());
+    }
 }

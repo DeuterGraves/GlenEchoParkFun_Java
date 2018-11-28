@@ -11,7 +11,7 @@ public class CandyFlossStallTest {
 
     @Before
     public void before(){
-        candyFlossStall = new CandyFlossStall("Tooth Rot!", "Lætitia Sugarinham", "A1");
+        candyFlossStall = new CandyFlossStall("Tooth Rot!", "Lætitia Sugarinham", "A1", 3);
     }
 
     @Test
@@ -27,5 +27,10 @@ public class CandyFlossStallTest {
     @Test
     public void candyFlossStallHasParkingSpot(){
         assertEquals("A1", candyFlossStall.getParkingSpot());
+    }
+
+    @Test
+    public void rollerCoasterHasRating(){
+        assertEquals(3, candyFlossStall.getRating());
     }
 }

@@ -11,12 +11,16 @@ public class ParkTest {
 
     @Before
     public void before(){
-        park = new Park("Turkey Run");
+        park = new Park("Turkey Run", 5);
     }
 
     @Test
     public void parkHasAName(){
         assertEquals("Turkey Run", park.getName());
+    }
 
+    @Test
+    public void parkHasRating(){
+        assertEquals(5, park.getRating());
     }
 }

@@ -16,7 +16,7 @@ public class RollerCoasterTest {
 
     @Before
     public void before(){
-        rollerCoaster = new RollerCoaster("The Grizzly");
+        rollerCoaster = new RollerCoaster("The Grizzly", 11);
         shortVisitor = new Visitor("Shorty McShortington", 14, 143, 5000);
         youngVisitor = new Visitor("Baby McBabyFace", 10, 146, 5001);
         shortYoungVisitor = new Visitor("Absolutely NOT", 9, 110, 10000);
@@ -57,5 +57,10 @@ public class RollerCoasterTest {
     @Test
     public void visitorIsJustRightForCoaster(){
         assertEquals(true, rollerCoaster.isAllowedTo(justRightVisitor));
+    }
+
+    @Test
+    public void rollerCoasterHasRating(){
+        assertEquals(11, rollerCoaster.getRating());
     }
 }

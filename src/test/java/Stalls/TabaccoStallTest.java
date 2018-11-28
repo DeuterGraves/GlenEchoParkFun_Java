@@ -14,7 +14,7 @@ public class TabaccoStallTest {
 
     @Before
     public void before(){
-        tabaccoStall = new TabaccoStall("The Cuddle Up!", "Barry Tarhampton", "1A");
+        tabaccoStall = new TabaccoStall("The Cuddle Up!", "Barry Tarhampton", "1A", 0);
         visitor1 = new Visitor("Della Pandalan", 20, 120, 15);
         visitor2 = new Visitor("Robert Bingston", 16, 167, 25);
     }
@@ -47,5 +47,10 @@ public class TabaccoStallTest {
     @Test
     public void tabaccoStallAllowsOver18s(){
         assertEquals(true, tabaccoStall.isAllowedTo(visitor1));
+    }
+
+    @Test
+    public void tabaccoStallHasRating(){
+        assertEquals(0, tabaccoStall.getRating());
     }
 }

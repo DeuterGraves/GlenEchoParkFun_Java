@@ -11,11 +11,16 @@ public class BumperCarsTest {
 
     @Before
     public void before(){
-        bumperCars = new BumperCars("The Skooter");
+        bumperCars = new BumperCars("The Skooter", 5);
     }
 
     @Test
     public void bumperCarsHasName(){
         assertEquals("The Skooter", bumperCars.getName());
+    }
+
+    @Test
+    public void bumperCarHasRating(){
+        assertEquals(5, bumperCars.getRating());
     }
 }

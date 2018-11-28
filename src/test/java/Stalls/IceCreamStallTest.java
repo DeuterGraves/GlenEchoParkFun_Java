@@ -11,7 +11,7 @@ public class IceCreamStallTest {
 
     @Before
     public void before(){
-        iceCreamStall = new IceCreamStall("Brain Freezer!", "Patrice Letchington", "1A");
+        iceCreamStall = new IceCreamStall("Brain Freezer!", "Patrice Letchington", "1A", 5);
     }
 
     @Test
@@ -27,5 +27,10 @@ public class IceCreamStallTest {
     @Test
     public void iceCreamStallHasParkingSpot(){
         assertEquals("1A", iceCreamStall.getParkingSpot());
+    }
+
+    @Test
+    public void iceCreamStallHasRating(){
+        assertEquals(5, iceCreamStall.getRating());
     }
 }

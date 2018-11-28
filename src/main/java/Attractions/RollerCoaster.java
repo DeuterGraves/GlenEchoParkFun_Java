@@ -8,8 +8,8 @@ public class RollerCoaster extends Attraction implements ISecurity {
     private int minHeight;
     private int minAge;
 
-    public RollerCoaster(String name){
-        super(name);
+    public RollerCoaster(String name, int rating){
+        super(name, rating);
         this.minHeight = 145;
         this.minAge = 12;
     }
